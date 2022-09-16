@@ -1,0 +1,185 @@
+<div class="card" id="participate" style="padding-left: 10%; padding-right: 10%; padding-top:30px; text-align: justify">
+    <H1>HOW TO PARTICIPATE:</H1>
+    <div style="margin-left: 10%; margin-right: 10%; text-align: justify">
+      <p><b>Event Guidelines:</b></p>
+      <p> --->    To be eligible for Top 10 prizes, the following eligibility requirements must be met:</p>
+      <ul>
+        <li style="color:azure">Registration via <b>Section 1</b> of the Google Form <a href="https://forms.gle/uZZVq4Jc4R9A9JED7"><b><u>LINKED HERE</u></b></a></li>
+        <li  style="color:azure">Attainment of Top 10 ranking on event leaderboard</li>
+      </ul>
+          <br>
+        <p>--->   <b>*** UPDATE ***</b> To be eligible for Top 3 prizes or awards you must be a Member of the American Planning Association.</p>
+      <br>
+      <p>--->   To be eligible for prizes or awards through the Digital Ocean/GitHub sponsored event you must submit using GitHub.</p>
+      <br>
+      <p>--->   Contact Lian Plass (<a href = "mailto: lianplass@gmail.com">lianplass@gmail.com</a>) if you encounter any issues submitting through the Google Form or through GitHub</p>
+       </div>
+       <br>
+    <div class="row justify-content-center" style="margin-left: 7.5%; margin-right: 7.5%">
+      <div class="row">
+        <div class="col">
+          <div class="card h-100">
+            <div style="background-color: azure; padding-left: 20px; padding-right: 20px; border-color: #006699">
+              <div style="font-size: x-large; font-family:'Courier New', Courier, monospace; color:#006699">
+              <br>
+              <I><b>USING THE GOOGLE FORM</b></I>
+              <div style="font-size: medium">
+                <br>
+                <ol>
+                  <li>Check out the planning-technology-resources repository</li>
+                  <li>Identify any resources you'd like to contribute to the repository that are not already there</li>
+                  <li>Navigate to the online form using the link above</li>
+                  <li>If this is your first time contributing to the repo as part of this event, fill out both <b>SECTION 1</b> AND <b>SECTION 2</b> of the form</li>
+                  <li>Click "Submit" and repeat these steps for each resource you'd like to contribute</li>
+                  <li>Check the Leaderboard page periodically toward the end of the month to see where you stand and keep an eye out for awards announcements</li>
+                </ol>
+                <br>
+                <div class="text-center">
+                  <a href="https://forms.gle/uZZVq4Jc4R9A9JED7" target="_blank" class="btn btn-primary" style="width: 100%; background-color:rgb(30, 39, 66); color: #fbb323; font-size:20px; font-family: 'Courier New', monospace; border-color: white"><b>Link to Google Form</b></a>
+                </div>
+                <br>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div style="background-color: #596367; padding-left: 20px; padding-right: 20px; height:100%">
+              <div style="font-size: x-large; font-family:'Courier New', Courier, monospace; color:azure">
+              <br>
+                <I><b>USING GITHUB</b></I>
+              <div style="font-size: medium">
+                <br>
+                <ol>
+                  <li style="color:azure">Visit the planning-technology-resources GitHub repository</li>
+                  <li style="color:azure">Identify your resources</li>
+                  <li style="color: azure"> Read the contribution guide located in the CONTRIBUTING.md file in the planning-technology-resources repository.  
+                    Note that there is also a video guide on how to use GitHub in the guide as well.
+                  <li style="color:azure">Submit a Pull Request in conformance with requirements outlined in the CONTRIBUTING.md file</li>
+                </ol>
+                <br>
+                <div class="text-center">
+                  <a href="https://github.com/APA-Technology-Division/urban-and-regional-planning-resources/blob/main/CONTRIBUTING.md" target="_blank" class="btn btn-primary" style="width: 100%; background-color:rgb(30, 39, 66); color: #fbb323; font-size:20px; font-family: 'Courier New', monospace; border-color: white"><b>Link to CONTRIBUTING.md</b></a>
+                </div>
+                <br>
+                <div class="text-center">
+                  <a href="https://github.com/APA-Technology-Division/urban-and-regional-planning-resources" target="_blank" class="btn btn-primary" style="width: 100%; background-color:rgb(30, 39, 66); color: #fbb323; font-size:20px; font-family: 'Courier New', monospace; border-color: white"><b>Link to Repository</b></a>
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  <br>
+  <br>
+  </div>
+  </div>
+  </div>
+  <br>
+  <br>
+  <div style="margin-left: 10%; margin-right: 10%">
+  </div>
+  <br>
+  <br>
+  <hr style="background-color:azure">
+  <br>
+  <br>
+  <div style="margin-left: 10%; margin-right: 10%;">
+  <hr style="background-color:azure">
+  <br>
+  <br>
+  <div style="margin-left: 10%; margin-right: 10%">
+    <H1>SCORING & AWARDS:</H1>
+    <p>Contributions are weighted according to their relative value to the repository and are divided into four types (See below for scoring matrix). <b>Additional points are awarded for contributions to sections that have a below-average number of resources as of the date of the event.</b></p>
+    <table class="table table-bordered" style="font-family:'Courier New', Courier, monospace; color:azure; text-align:center">
+      <tr>
+        <th></th>
+        <th style="font-size: large;"><b>General Submission</b></th>
+        <th style="font-size: large"<b>Uncommon Submission (x2 Bonus)</b></th>
+      </tr>
+      <tr>
+        <td>Proprietary Resources</td>
+        <td>5 pts</td>
+        <td>10 pts</td>
+      </tr>
+      <tr>
+        <td>Freemium Resources</td>
+        <td>10 pts</td>
+        <td>20 pts</td>
+      </tr>
+      <tr>
+        <td>Free Resources</td>
+        <td>15 pts</td>
+        <td>30 pts</td>  
+    <tr>
+      <td>Free and Open Source Resources</td>
+      <td>20 pts</td>
+      <td>40 pts</td>
+    </tr>
+    </table>
+    </div>
+  <br>
+  <div class="row justify-content-center" style="margin-left: 7.5%; margin-right: 7.5%">
+    <div class="col">
+      <div class="card h-100" style="background-color:rgb(30, 39, 66); border-color: white">
+        <div style="margin-top: 30px; margin-bottom: 30px; margin-left: 15px; margin-right: 15px">
+                <center><h5 style="color:#ffe0a1"><b>Top 10 Award</b></h5>
+                  <br>
+                  <br>
+                <p style="color:#ffe0a1"> The Top 10 contributors will receive a <a href="" data-toggle="modal" data-target="#ModalB"><U>T-SHIRT.</U></a>
+  
+                  <div id="ModalB" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-body">
+                              <img style="max-width:100%; height:auto" src="https://cdn.shopify.com/s/files/1/2461/5497/collections/womens-t-shirt-new-york_2048x.jpg" class="img-responsive">
+                          </div>
+                      </div>
+                    </div>
+                  </div></p></center>
+                </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100" style="background-color: rgb(30, 39, 66); border-color: white">
+        <div style="margin-top: 30px; margin-bottom: 30px; margin-left: 15px; margin-right: 15px">
+              <center><h5 style="color:#e6bda4"><b>Top 3 Award</b></h5>
+                <br>
+                <p style="color:#e6bda4"> The Top 3 contributors will receive a Planning Technology Division Membership, A book related to technology in planning, and a <a href="" data-toggle="modal" data-target="#ModalA"><U>TOTE BAG.</U></a>
+  
+                  <div id="ModalA" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-body">
+                              <img style="max-width:100%; height:auto" src="https://cdn.shopify.com/s/files/1/2461/5497/collections/tote-boston-full_900x@2x.jpg" class="img-responsive">
+                          </div>
+                      </div>
+                    </div>
+                  </div></p></center>
+                </div>
+      </div>
+    </div>
+      <div class="col">
+        <div class="card h-100" style="background-color:rgb(30, 39, 66); border-color: white">
+          <div style="margin-top: 30px; margin-bottom: 30px; margin-left: 15px; margin-right: 15px">
+                  <center><h5 style="color:#ffad9d"><b>Top Overall Award</b></h5>
+                    <br>
+                  <p style="color:#ffad9d"> The top contributor overall will receive a <a href="" data-toggle="modal" data-target="#ModalC"><U>LASER CUT CITY MAP</U></a>
+  
+                      <div id="ModalC" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-body">
+                                  <img style="max-width:100%; height:auto" src="https://cdn.shopify.com/s/files/1/0515/8050/2165/products/il_fullxfull.2079127240_5191_1024x1024@2x.jpg" class="img-responsive">
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      , a Planning Technology Division Membership, A book related to technology in planning, and a tote bag.</p></center>
+                  </div>
+        </div>
+      </div>
+    </div>
