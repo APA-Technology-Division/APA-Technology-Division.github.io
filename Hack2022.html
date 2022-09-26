@@ -45,7 +45,7 @@
     h1 {
       font-family: 'Courier New', monospace;
       color: black;
-      text-align:left;
+      text-align: left;
       font-size: 30px;
     }
 
@@ -110,53 +110,26 @@
       color: #bcc3d8;
     }
 
-    .navbar{
-      text-align:left;
+    .navbar {
+      text-align: left;
     }
+
     @media only screen and (min-width: 992px) {
-    .navbar .navbar-nav .nav-item .nav-link {
-      padding: 0 0.5em;
+      .navbar .navbar-nav .nav-item .nav-link {
+        padding: 0 0.5em;
+      }
+
+      .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+        border-right: 2px solid;
+      }
     }
-    .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
-      border-right: 2px solid;
-    }
-}
   </style>
 </head>
 
 <body>
-  <!-- <div id="ModalD" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-				    <a href="https://planning.org/divisions/tech/"><img src="https://github.com/APA-Technology-Division/APA-Technology-Division.github.io/blob/main/assets/CLOSEOUT_GRAPHIC-01.jpg?raw=true" style="width:100%; height:100%"></a>
-            </div>
-        </div>
-    </div>
-</div> -->
-  <br>
-  <br>
-  <!-- <div class="text-center">
-  <a href="https://docs.google.com/presentation/d/e/2PACX-1vT7p9sOx830--wO9IWi4MiMHy0k1CctaWQsm4lcHCyJWME6bzV_WVQnYLn-HCcymXShuZMJCyltv9DG/pub?start=false&loop=false&delayms=75000" class="btn btn-primary" style="width: 60%; background-color: rgb(30, 39, 66); color:#fbb323; font-size:20px; font-family: 'Courier New', monospace; border-color: white"><b>Click to Watch a Presentation about the Event</b></a>
-</div>  
-<br>
-<div class="text-center">
-  <a href="be-awesome-leaderboard.html" target="_blank" class="btn btn-primary" style="width: 60%; background-color:azure; color:#006699; font-size:20px; font-family: 'Courier New', monospace;"><b>Click to Check the Event Leaderboard!</b></a>
-</div> -->
-  <!-- <a href="" onclick="alertFunction()" class="btn btn-primary" style="width: 60%; background-color:azure; color:#006699; font-size:20px; font-family: 'Courier New', monospace; border-color: white"><b>Click to Check the Event Leaderboard!</b></a>
-</div>
-<script>
-  function alertFunction() {
-    alert("This Leaderboard will be available 10/1/2021-- Please check back soon!")
-  }
-</script> -->
-  <!-- <br>
-<div class="text-center">
-  <a href="https://tech.planning.org/" class="btn btn-primary" style="width: 60%; background-color: rgb(30, 39, 66); color:#fbb323; font-size:20px; font-family: 'Courier New', monospace; border-color: white"><b>Click to Learn More About the Planning Technology Division</b></a>
-</div>  
-<br> -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" onclick="window.location.reload()" href="#"><img style="width:65%; height:65%" src="assets/hackathon22_logo-01.svg"></a>
+    <a class="navbar-brand" onclick="window.location.reload()" href="#"><img style="width:65%; height:65%"
+        src="assets/hackathon22_logo-01.svg"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -173,16 +146,16 @@
             <a class="dropdown-item" href="assets/Division_Sponsorship_Package_22.pdf">Sponsor the Division</a>
             <a class="dropdown-item" href="#">View Past Hackathons</a>
           </div>
-        </li>        
+        </li>
         <li class="nav-item" onclick="window.location.reload()">
           <a class="nav-link" href="#">Overview</a>
         </li>
-        <li class="nav-item" onclick="save2()">
+        <!-- <li class="nav-item" onclick="save2()">
           <a class="nav-link" href="#">Participate</a>
         </li>
         <li class="nav-item" onclick="save3()">
           <a class="nav-link" href="#">Scoring</a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </nav>
@@ -191,7 +164,10 @@
       style="padding-left: 10%; padding-right: 10%; padding-top:30px; text-align: justify; border:transparent">
       <img src="assets/hackathon22_logo-01.svg">
       <hr>
-      <br>
+      <div class="alert alert-success" role="alert">
+        More details on this event coming soon!
+      </div>
+      <!-- <br> -->
       <H1>OVERVIEW:</H1>
       <br>
       <p>
@@ -207,11 +183,11 @@
         <br><br>This year, the APA Technology Division challenges planners to answer two questions often relegated to
         adage in this year's Hackathon event:
         <br>
+        <br>
       </p>
       <h3><i>
           <center>What gets measured? What gets managed?</center>
         </i></h3>
-      <br>
       <br>
     </div>
     <p style="text-align:right; padding-right:5%">
@@ -220,65 +196,7 @@
       <a href="https://www.reddit.com/user/apa-tech-division/" class="fa fa-reddit"></a>
     </p>
   </div>
-  <div style="display:none">
-    <div class="card" id="participate"
-      style="padding-left: 10%; padding-right: 10%; padding-top:30px; text-align: justify">
-      <H1>HOW TO PARTICIPATE:</H1>
-      <p> Whether you're a data newbie or a data wonk, this year's Hackathon has something for everyone. </p>
-      <div class="card" style="padding:5%; background-color: rgb(233, 233, 233)">
-        <h3>Beginner</h3>
-        <p>Identify an existing data standard (provide a list of sample standards) and articulate potential applications
-          to a planning data type or process</p>
-          <br>
-          <p style="text-align:left"><b>Alternatively:</b></p>
-        <p style="text-align:left">Propose a revision to an existing data standard to accommodate a planning-specific
-          use case</p>
-        </p>
-      </div>
-      <br>
-      <div class="card" style="padding:5%; background-color:rgb(233, 233, 233)">
-        <h3>Advanced</h3>
-        <p>Complete the beginners challenge and include a proof of concept</p>
-      </div>
-      <br>
-      <h3>Submissions</h3>
-      <p>
-        Submit a pull request to [DESIGNATED GITHUB REPOSITORY] containing an 800 to 1,500-word summary of the proposed
-        standard (see Evaluation Criteria for format guidance), proof of concept dataset
-        To be eligible for an award, participants must submit via pull request to [DESIGNATED GITHUB REPOSITORY]. In
-        doing so, participants consent to the repo licensing agreement which states [INCLUDE LICENSING AGREEMENT
-        VERBIAGE AND IMPLICATIONS].
-      </p>
-      <br>
-      <br>
-    </div>
-    <div class="card" id="scoring" style="padding-left: 10%; padding-right: 10%; padding-top:30px; text-align: justify">
-      <H1>SCORING & AWARDS:</H1>
-      <h3>Hackathon Teams</h3>
-      <p>Projects may be completed by individuals or teams of up to 5. If you would like to compete as a team, please
-        email Lian Plass with a list of your team members before October 1, 2022.</p>
-      <br>
-      <h3>Evaluation Panel</h3>
-      <ul>
-      </ul>
-      <br>
-      <h3>Evaluation Criteria</h3>
-      <ul>
-        <li><b>Applicability</b> - How relevant is the proposed standard to planning practice?</li>
-        <li><b>Feasibility</b> - How easy is it to integrate this standard into existing systems (planning and
-          otherwise)?</li>
-        <li><b>Comprehensiveness</b> - How well does the summary and proof of concept address the challenge?</li>
-      </ul>
-      <br>
-      <h3>Important Dates:</h3>
-      <ul>
-        <li>October 1, 2022 - Hackathon commences</li>
-        <li>October 31, 2022 - Hackathon concludes</li>
-        <li>November 14, 2022 - Results available online</li>
-      </ul>
-
-      </p>
-    </div>
+  </div>
   </div>
 </body>
 <footer>
