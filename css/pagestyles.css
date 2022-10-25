@@ -1,0 +1,100 @@
+body {
+    background-color: #bcc3d8;
+    margin: 5%
+}
+
+h1 {
+    font-family: 'Courier New', monospace;
+    color: black;
+    text-align: left;
+    font-size: 30px;
+}
+
+h5 {
+    font-family: 'Courier New', monospace;
+    color: black;
+    font-size: x-large
+}
+
+h3 {
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+}
+
+p {
+    font-family: 'Courier New', monospace;
+    color: black;
+    align-self: center;
+    align-content: center;
+}
+
+.row {
+    margin: 0 auto;
+    /* Added */
+    float: none;
+    /* Added */
+    margin-bottom: 10px;
+    /* Added */
+}
+
+li {
+    color: black;
+    font-family: 'Courier New', monospace;
+    text-align: left;
+}
+
+a {
+    font-size: large
+}
+
+.fa {
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.9;
+    color: lightgray
+}
+
+.fa-twitter {
+    color: #bcc3d8;
+}
+
+.fa-reddit {
+    color: #bcc3d8;
+}
+
+.navbar {
+    text-align: left;
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar .navbar-nav .nav-item .nav-link {
+        padding: 0 0.5em;
+    }
+
+    .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+        border-right: 2px solid;
+    }
+}
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #dbf436;
+    color: black;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1;
+}
