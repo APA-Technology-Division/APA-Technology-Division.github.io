@@ -15,13 +15,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script>
-    $(document).ready(function () {
-      $("#ModalD").modal('show');
-    });
-  </script>
+  <link rel="stylesheet" href="css/pagestyles.css">
   <script>
     function save1() {
       var x = document.getElementById("overview");
@@ -36,94 +33,6 @@
       x.innerHTML = document.getElementById("scoring").innerHTML;
     }
   </script>
-  <style>
-    body {
-      background-color: #bcc3d8;
-      margin: 5%
-    }
-
-    h1 {
-      font-family: 'Courier New', monospace;
-      color: black;
-      text-align: left;
-      font-size: 30px;
-    }
-
-    h5 {
-      font-family: 'Courier New', monospace;
-      color: black;
-      font-size: x-large
-    }
-
-    h3 {
-      font-family: 'Courier New', monospace;
-      font-size: 20px;
-      color: black;
-      font-weight: bold;
-      text-align: left;
-    }
-
-    p {
-      font-family: 'Courier New', monospace;
-      color: black;
-      align-self: center;
-      align-content: center;
-    }
-
-    .row {
-      margin: 0 auto;
-      /* Added */
-      float: none;
-      /* Added */
-      margin-bottom: 10px;
-      /* Added */
-    }
-
-    li {
-      color: black;
-      font-family: 'Courier New', monospace;
-    }
-
-    a {
-      font-size: large
-    }
-
-    .fa {
-      padding: 20px;
-      font-size: 30px;
-      width: 30px;
-      text-align: center;
-      text-decoration: none;
-      margin: 1px 5px;
-      border-radius: 50%;
-    }
-
-    .fa:hover {
-      opacity: 0.9;
-    }
-
-    .fa-twitter {
-      color: #bcc3d8;
-    }
-
-    .fa-reddit {
-      color: #bcc3d8;
-    }
-
-    .navbar {
-      text-align: left;
-    }
-
-    @media only screen and (min-width: 992px) {
-      .navbar .navbar-nav .nav-item .nav-link {
-        padding: 0 0.5em;
-      }
-
-      .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
-        border-right: 2px solid;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -142,20 +51,21 @@
             About
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="https://tech.planning.org/">About the APA Technology Division</a>
+            <a class="dropdown-item" href="https://tech.planning.org/">About the APA Tech Division</a>
             <a class="dropdown-item" href="assets/Division_Sponsorship_Package_22.pdf">Sponsor the Division</a>
-            <a class="dropdown-item" href="https://apa-technology-division.github.io/archived/Hack2021.html">View Past Hackathons</a>
+            <a class="dropdown-item" href="https://apa-technology-division.github.io/archived/Hack2021.html">View Past
+              Hackathons</a>
           </div>
         </li>
         <li class="nav-item" onclick="window.location.reload()">
           <a class="nav-link" href="#">Overview</a>
         </li>
-        <!-- <li class="nav-item" onclick="save2()">
+        <li class="nav-item" onclick="save2()">
           <a class="nav-link" href="#">Participate</a>
         </li>
         <li class="nav-item" onclick="save3()">
           <a class="nav-link" href="#">Scoring</a>
-        </li> -->
+        </li>
       </ul>
     </div>
   </nav>
@@ -164,10 +74,7 @@
       style="padding-left: 10%; padding-right: 10%; padding-top:30px; text-align: justify; border:transparent">
       <img src="assets/hackathon22_logo-01.svg">
       <hr>
-      <div class="alert alert-success" role="alert">
-        More details on this event coming soon!
-      </div>
-      <!-- <br> -->
+      <br>
       <H1>OVERVIEW:</H1>
       <br>
       <p>
@@ -177,23 +84,188 @@
         them. Similarly, planners and the municipalities they serve are affected (for better or worse) by what is and is
         not standardized.
         <br><br>A glaring exception in the ubiquity of standards in the planning profession are those applicable to
-        data, particularly the way that data is structured and interpreted. Metadata standards, as they are called, are
+        data, particularly the way that data is structured and interpreted. Metadata specifications, as they are called,
+        are
         essential to planners’ ability to mobilize growing caches of information about the social and the built
         environment and apply them to improve planning practice.
       </p>
+      <button style="background-color:#dbf436;" class="btn-block shadow"><a target="_blank"
+          style="color:black; font-family:Courier New" href="https://forms.gle/sa9f7CFue9hZ6XwD6"><b>Click to Sign
+            Up</a></button>
+      <hr>
+      <div class="card">
+        <a class="twitter-timeline" data-height="200" href="https://twitter.com/APA_Technology?ref_src=twsrc%5Etfw">
+          <p></p>
+        </a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
       <br>
     </div>
     <p style="text-align:right; padding-right:5%">
       <b>Social:</b>
-      <a href="https://twitter.com/apa_technology?lang=en" class="fa fa-twitter"></a>
+      <a style="padding-bottom:20px" href="https://twitter.com/apa_technology?lang=en" class="fa fa-twitter"></a>
       <a href="https://www.reddit.com/user/apa-tech-division/" class="fa fa-reddit"></a>
     </p>
   </div>
-  </div>
+  <div style="display:none">
+    <div class="card" id="participate"
+      style="padding-left: 10%; padding-right: 10%; padding-top:30px; text-align: justify">
+      <div>
+        <button type="button" data-toggle="modal" data-target="#dsexamples" class="btn-block bt-transparent float">
+          <i class="fa fa-question my-float"></i>
+        </button>
+        <div class="modal fade" id="dsexamples" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLongTitle">Examples of Data Standards</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div style="text-align:left" class="modal-body">
+                <p>Here are some helpful examples of data standards. If you'd like more direct guidance on approach to
+                  this Hackathon, feel free to email Lian Plass at <a
+                    href="mailto: lianplass@gmail.com">lian.plass@gmail.com</a>.</p>
+                <hr>
+                <br>
+                <ul>
+                  <li><a href="https://developers.google.com/transit/gtfs/reference?csw=1#term-definitions">Google GTFS
+                      &
+                      GBSF
+                      Transit Standards</a></li>
+                  <li><a href="https://www.exchangenetwork.net/standards/SIC_NAICS_01_06_2006_Final.pdf">EPA SIC/NAICS
+                      Data
+                      Standard</a></li>
+                  <li><a href="https://www.pedbikeinfo.org/topics/countingestimating.cfm">Bike/Ped Data Collection
+                      Resources</a></li>
+                  <li><a href="https://www.planning.org/lbcs/standards/">LBCS Standards</a></li>
+                  <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3996609">National Zoning Atlas How-to
+                      Guide</a></li>
+                  <li><a
+                      href="https://www.standards.its.dot.gov/LearnAboutStandards/NationalITSArchitecture">Intelligent
+                      Transportation Systems (ITS) Reference Architecture</a></li>
+                  <li><a href="https://www.standards.its.dot.gov/LearnAboutStandards/ITSStandardsBackground">ITS
+                      Standards
+                      Program</a></li>
+                  <li><a href="https://www.fgdc.gov/standards">Federal Geographic Data Committee Standards</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <H1>HOW TO PARTICIPATE:</H1>
+        <p>Whether you're a data newbie or a data wonk, this year's Hackathon has something for everyone.</p>
+        <div class="card" style="padding:5%; background-color: rgb(233, 233, 233)">
+          <h3>The Challenge</h3>
+          <p>Data standards help solve coordination problems between actors. For instance, in planning, data
+            standards
+            help cities maintain parcel records, allowing people to access accurate information about properties.
+            Data
+            standards also help coordinate transit schedules across jurisdictions and between applications. </p>
+          <p>For this challenge, propose a new lightweight <a data-toggle="tooltip"
+              title="Data standards are the guidelines by which data are described and recorded. In order to share, exchange, combine and understand data, we must standardize the format as well as the meaning"><b><u>data
+                  standard</u></b></a>
+            or modify an existing standard to enable planners
+            to measure and compare metrics for <a data-toggle="tooltip"
+              title=" Sustainable development is development that meets the needs of the present without compromising the ability of future generations to meet their own needs"><b><u>sustainable
+                  development</u></b></a> between
+            municipalities. This data standard should address either one or all of the three pillars of sustainability:
+            environmental, social, economic. It can also focus on <a data-toggle="tooltip"
+              title="Environmental issues might be ecosystem services, air quality, water quality, pollution, waste reduction &nbsp; Social issues might be environmental justice, human health, community engagement, or resource security &nbsp; Economic issues might be jobs, incentive programs, supply and demand, valuation of natural resources, cost of adaptation/mitigation"><b><u>specific
+                  issues of sustainable development</u></b></a>
+            such as equity or resilience, and economic development.</p>
+          <br>
+          <h3>Optional</h3>
+          <p>Show your proposed data standard in action! Develop a proof of concept for how the proposed data standard
+            can be applied in practice by using it to compare metrics for sustainable development between at least two
+            municipalities.
+          </p>
+          <script>
+            $(document).ready(function () {
+              $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+            });
+          </script>
+        </div>
+        <br>
+        <h1>TEAMS:</h1>
+        <p>Projects may be completed by individuals or teams of up to 5. If you would like to compete as a team, please
+          email Lian Plass with a list of your team members before November 30th.</p>
+        <br>
+        <h1>SUBMISSIONS:</h1>
+        <p>
+          Submit an 800 to 2,000-word summary of the proposed standard using this submission form. Summaries should
+          include:
+        <ul>
+          <li>Explanation of rationale for developing or selecting your standard (what is the problem you are trying to
+            solve?)</li>
+          <li>Explanation of the proposed standard (reasons for variable selection, hierarchy, format, etc.)</li>
+          <li>Discussion of potential use cases for the proposed standard</li>
+          <li>A data structure diagram</li>
+          <li>Description of the schema containing variable names, variable definitions, data types/formats, parent
+            variables (if any), any other relevant characteristics of the input data:</li>
+          <div style="width:fit-content">
+            <img style="width:100%" src="assets/SampleTable.png">
+          </div>
+        </ul>
+        <p><b>More about the optional proof of concept submission</b>
+        <p>The proof of concept submission is fairly open-ended. Participants are free to choose how to represent their
+          proposed data standards, including through interactive maps, websites or Wikis, PowerPoints and recorded
+          presentations. In your submission consider including your rationale for selecting the chosen municipalities
+          for comparison, a copy of the resulting datasets, a few observations or descriptive statistics from those
+          datasets, any documentation explaining processing methodology, and a copy of or link to your source data. </p>
+        <br>
+        <center><button style="background-color:#dbf436;" class="btn-block shadow"><a target="_blank"
+              style="color:black; font-family:Courier New;" href="https://forms.gle/sa9f7CFue9hZ6XwD6"><b>Click to
+                Submit</b></a></button></center>
+        <br>
+        <center>
+          <p><b>Acceptable submission formats:</b> PDF upload (10 MB max), website link, other</p>
+        </center>
+        <hr>
+        <p style="font-size:10px; text-align:left">* If your submission falls into the "Other" format category, contact
+          Lian Plass at <a style="font-size:10px" href="mailto:lianplass@gmail.com">lianplass@gmail.com</a> for
+          submission instruction </p>
+        <br>
+        <br>
+      </div>
+      </div>
+      <div class="card" id="scoring"
+        style="padding-left: 10%; padding-right: 10%; padding-top:30px; text-align: justify">
+        <H1>SCORING & AWARDS:</H1>
+        <br>
+        <H3>Awards</H3>
+        <div style="text-align:left">
+        <p><u>Best Overall</u>: $200</p>
+        <p><u>Best in Category</u>*: $50</p>
+        </div>
+        <hr>
+        <p style="font-size:10px; text-align:left">* Categories are (1) applicability, (2) feasibility, and (3)
+            comprehensiveness. See also evaluation criteria below.</p>
+        </p>
+        <br>
+        <h3>Evaluation Criteria</h3>
+        <ul>
+          <li><b>Applicability</b> - How relevant is the proposed standard to planning practice?</li>
+          <li><b>Feasibility</b> - How easy is it to integrate this standard into existing systems (planning and
+            otherwise)?</li>
+          <li><b>Comprehensiveness</b> - How well does the summary and proof of concept address the challenge?</li>
+        </ul>
+        <br>
+        <h3>Important Dates:</h3>
+        <ul>
+          <li>November 1, 2022 - Hackathon commences</li>
+          <li>November 31, 2022 - Hackathon concludes</li>
+          <li>December 12, 2022 - Results available online</li>
+        </ul>
+
+        </p>
+      </div>
+    </div>
   </div>
 </body>
 <footer>
-  <br>
   <br>
   <p style="text-align:center">pli | 2022</p>
 </footer>
