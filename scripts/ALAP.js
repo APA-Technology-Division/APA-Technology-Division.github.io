@@ -6,8 +6,7 @@
 */
 
 $(document).ready(function () {
-  const apiKey = 'AIzaSyBgGb06IGOhCDG7To0fSBm53INVwZRbLjA';
-    // const apiKey = 'AIzaSyB_wctvMCmfSUFMYkvnDOKNAcVx-ohsQqg';
+    const apiKey = 'AIzaSyB_wctvMCmfSUFMYkvnDOKNAcVx-ohsQqg';
     const spreadsheetId = '1ArTdEQOh2BKl2UXRJ55OQ8hELvdqOoLtVeA9U_YIg9s';
     const sheetName = 'LIVE_RESPONSES'; 
     const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${sheetName}?key=${apiKey}`;
