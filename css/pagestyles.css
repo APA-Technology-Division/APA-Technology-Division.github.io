@@ -47,7 +47,9 @@ li {
 }
 
 a {
-    font-size: large
+    font-size: large;
+    font-family: 'Courier New', monospace;
+    color:black;
 }
 
 .fa {
