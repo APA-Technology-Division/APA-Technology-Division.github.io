@@ -100,3 +100,31 @@ a {
     box-shadow: 2px 2px 3px #999;
     z-index: 1;
 }
+
+.body-card-header {
+    color: black;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 5px 5px #bcc3d8;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.placeholder-text {
+    font-family:"Courier New",monospace; 
+    color: black;
+    font-weight: bold;
+    text-decoration: underline; 
+    text-underline-offset: 2px;
+    cursor:pointer;
+    font-size: medium;
+}
+
+.modal-body {
+    font-family:"Courier New",monospace; 
+    color: darkgray;
+    cursor:pointer;
+    font-size: medium;
+}

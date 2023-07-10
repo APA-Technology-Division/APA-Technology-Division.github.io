@@ -26,7 +26,11 @@ $(document).ready(function () {
         rows.forEach(row => {
           const rowData = {};
           row.forEach((cell, index) => {
-            rowData[headers[index]] = cell;
+              if (typeof cell === 'string' && cell.includes('http')) {
+                  // Replace all URL-like strings with anchor tags
+                  cell = cell.replace(/(https?:\/\/[^\s]+)/g, '<a style="font-size:medium;" target="_blank" href="$1">Click to View Example</a>');
+              }
+              rowData[headers[index]] = cell;
           });
   
           if (Object.values(rowData).join(' ').toLowerCase().includes(searchTerm.toLowerCase())) {
@@ -39,12 +43,12 @@ $(document).ready(function () {
     });
   
     function generateCard(header, rowData) {
-      const card = $('<div class="card"></div>');
+      const card = $('<div class="card" style="font:50px;"></div>');
       const cardHeader = $('<div class="card-header"></div>');
       cardHeader.text(header);
       card.append(cardHeader);
     
-      const table = $('<table class="table"></table>');
+      const table = $('<table class="table-responsive"></table>');
       const tbody = $('<tbody></tbody>');
     
       Object.keys(rowData).forEach((key, index) => {
@@ -54,7 +58,7 @@ $(document).ready(function () {
           th.text(key);
           tr.append(th);
           const td = $('<td></td>');
-          td.text(rowData[key]);
+          td.html(rowData[key]);
           tr.append(td);
           tbody.append(tr);
         }
@@ -76,7 +80,7 @@ $(document).ready(function () {
       const modalDialog = $('<div class="modal-dialog"></div>');
       const modalContent = $('<div class="modal-content"></div>');
       const modalHeader = $('<div class="modal-header"><h5>' + 'Build Your Prompt' + '</h5></div>');
-      const modalFooter = $('<hr style="width:95%"><div style="padding-bottom:15px;"><center><table style="width:95%;"><tbody><tr><td style="text-align:left"> <button type="button" class="btn btn-secondary" id="copyButton" onclick="copyText()"><i class="fas fa-copy"></i></button></td><td style="text-align:right"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></td></tr></tbody></table></center></div>');
+      const modalFooter = $('<hr style="width:95%"><div style="padding-bottom:15px;"><center><table style="width:95%;"><tbody><tr><td style="text-align:left"> <button type="button" class="btn btn-secondary" id="copyButton" onclick="copyText()"><i class="fas fa-copy"></i></button></td><td style="text-align:right"><button type="button" class="btn btn-secondary" onclick="location.reload();" data-bs-dismiss="modal">Close</button></td></tr></tbody></table></center></div>');
       
       modalDialog.append(modalContent);
       modalContent.append(modalHeader, modalBody, modalFooter);
@@ -96,12 +100,12 @@ $(document).ready(function () {
           placeholderText.text(newText);
           $(this).parent().toggle(); // Hide the update form
         }
-      });
+      });      
     }
     
     function generateCard(header, rowData) {
       const card = $('<div class="card" style="font-family:\'Courier New\', Courier, monospace;"></div>');
-      const cardHeader = $('<div class="card-header" style="font-size:20px; font-family:\'Courier New\', Courier, monospace; font-weight:bold;"></div>');
+      const cardHeader = $('<div class="card-header body-card-header"></div>');
       cardHeader.text(header);
       cardHeader.click(function() {
         openModal(header, rowData[Object.keys(rowData)[1]]);
@@ -118,7 +122,7 @@ $(document).ready(function () {
           th.text(key);
           tr.append(th);
           const td = $('<td></td>');
-          td.text(rowData[key]);
+          td.html(rowData[key]);
           tr.append(td);
           tbody.append(tr);
         }
@@ -165,5 +169,3 @@ function copyText() {
       });
       
   }
-
-
