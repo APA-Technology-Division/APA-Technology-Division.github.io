@@ -10,6 +10,14 @@ h1 {
     font-size: 30px;
 }
 
+h2 {
+    font-family: 'Courier New', monospace;
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 h5 {
     font-family: 'Courier New', monospace;
     color: black;
@@ -73,6 +81,12 @@ a {
     color: #bcc3d8;
 }
 
+.link-icon {
+    font-size: 30pt;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
 .navbar {
     text-align: left;
 }
@@ -127,4 +141,25 @@ a {
     color: darkgray;
     cursor:pointer;
     font-size: medium;
+}
+
+#back-to-top {
+    display: none; 
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: black; 
+    color: white;
+    cursor: pointer; 
+    padding: 15px;
+    border-radius: 10px; 
+    font-size: 18px; 
+}
+
+#back-to-top:hover {
+    background-color: #dbf436;
+    color:black
 }
