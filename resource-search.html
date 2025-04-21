@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+    <title>Urban and Regional Planning Resource Search</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTR9SSJEHM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RTR9SSJEHM');
+  </script>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <!-- 
+--------------------------------------------------------------------------------
+|    Thanks for checking out this page's source!                               | 
+|    If you've made it this far, you should consider contributing to the       |
+|    urban-and-regional-planning-resources GitHub repository.  We'd love       | 
+|    your help in continuing to make this available for planners!              |
+-------------------------------------------------------------------------------- 
+-->
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://apa-technology-division.github.io/css/pagestyles.css">
+  <style>
+    .no-linebreak {
+      display: flex;
+      align-items: center;
+    }
+
+    .magnifying-glass-icon {
+      height: 5em; /* Adjust as needed */
+      margin-right: 40px; /* Optional spacing */
+    }
+
+    .no-linebreak h1 {
+      margin: 0; /* Optional, for tighter spacing */
+    }
+
+    #controls {
+      display: flex;
+      gap: 1em;
+      margin-bottom: 1em;
+    }
+
+    #search,
+    #category-filter {
+      padding: 0.5em;
+      font-size: 1em;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .result {
+      padding: 1em;
+      margin-bottom: 1em;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .result h3 {
+      margin: 0;
+    }
+
+    .result a {
+      color: #0645AD;
+    }
+    #controls input,#controls select {
+    font-family: 'Courier New', monospace;
+  }
+  </style>
+</head>
+
+<body>
+  <div id="navbar-container"></div>
+  <div style="background-color:white;border-radius:25px; ">
+    <div class="card" id="overview"
+      style="padding-left: 10%; padding-right: 10%; padding-top:30px; padding-bottom:50px; border:transparent">
+      <div class="container">
+        <br><br>
+        <div class="no-linebreak">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg" 
+               alt="Magnifying Glass" class="magnifying-glass-icon">
+          <h1><b>Urban & Regional Planning Resource Search</b></h1>
+        </div>
+        <hr>
+        <p style="text-rendering:center;">Use this tool to search the datasets, tools, and educational resources in the
+          APA Technology Division's urban-and-regional-planning-resources GitHub repository.</p>
+        <br>
+          <div id="controls">
+          <input type="text" id="search" placeholder="Search resources...">
+          <select id="category-filter">
+            <option value="all">All Categories</option>
+          </select>
+        </div>
+        <div id="results">Loading...</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      const markdownUrl = "https://raw.githubusercontent.com/APA-Technology-Division/urban-and-regional-planning-resources/main/README.md";
+
+      try {
+        const response = await fetch(markdownUrl);
+        const markdown = await response.text();
+        const lines = markdown.split('\n');
+
+        const resources = [];
+        let currentCategory = "";
+
+        for (let line of lines) {
+          line = line.trim();
+
+          const categoryMatch = line.match(/^###\s+(.*)/);
+          if (categoryMatch) {
+            currentCategory = categoryMatch[1].trim();
+            continue;
+          }
+
+          const entryMatch = line.match(/^- \[(.*?)\]\((.*?)\)\s*-\s*(.*)/);
+          if (entryMatch && currentCategory) {
+            const [, name, url, description] = entryMatch;
+            resources.push({
+              category: currentCategory,
+              name: name.trim(),
+              url: url.trim(),
+              description: description.trim()
+            });
+          }
+        }
+
+        // Setup Fuse.js
+        const fuse = new Fuse(resources, {
+          keys: ['name', 'description', 'category'],
+          threshold: 0.3
+        });
+
+        const searchInput = document.getElementById("search");
+        const categorySelect = document.getElementById("category-filter");
+        const resultsDiv = document.getElementById("results");
+
+        // Populate category filter
+        const uniqueCategories = [...new Set(resources.map(r => r.category))].sort();
+        uniqueCategories.forEach(cat => {
+          const option = document.createElement("option");
+          option.value = cat;
+          option.textContent = cat;
+          categorySelect.appendChild(option);
+        });
+
+        const renderResults = (data) => {
+          if (data.length === 0) {
+            resultsDiv.innerHTML = "<p>No results found.</p>";
+            return;
+          }
+          resultsDiv.innerHTML = data.map(entry => `
+            <div class="result">
+              <h3><a href="${entry.url}" target="_blank">${entry.name}</a></h3>
+              <p><strong>Category:</strong> ${entry.category}</p>
+              <p>${entry.description}</p>
+            </div>
+          `).join('');
+        };
+
+        const filterAndRender = () => {
+          const query = searchInput.value.trim();
+          const selectedCategory = categorySelect.value;
+
+          let result = query ? fuse.search(query).map(r => r.item) : [...resources];
+
+          if (selectedCategory !== 'all') {
+            result = result.filter(r => r.category === selectedCategory);
+          }
+
+          renderResults(result);
+        };
+
+        searchInput.addEventListener("input", filterAndRender);
+        categorySelect.addEventListener("change", filterAndRender);
+
+        // Initial render
+        renderResults(resources);
+
+      } catch (error) {
+        document.getElementById("results").innerHTML = "Error loading or parsing markdown:<br>" + error;
+      }
+    });
+  </script>
+  <script>
+    fetch('assets/navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+  </script>
+    <!--Bring in Local and CDN Dependencies-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://apa-technology-division.github.io/scripts/image-it-scripts.js"></script>
+    <script src="https://apa-technology-division.github.io/scripts/gallery.js"></script>
+</body>
+
+</html>
