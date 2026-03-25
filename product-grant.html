@@ -65,14 +65,8 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
   <div class="container">
     <button id="back-to-top" title="Back to Top">&#8679;</button>
     <script>
-      // Get the button
       let backToTopButton = document.getElementById("back-to-top");
-  
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function () {
-        scrollFunction();
-      };
-  
+      window.onscroll = function () { scrollFunction(); };
       function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
           backToTopButton.style.display = "block";
@@ -80,132 +74,155 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
           backToTopButton.style.display = "none";
         }
       }
-  
-      // When the user clicks on the button, scroll to the top of the document
       backToTopButton.addEventListener("click", function () {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth"
-        });
+        window.scrollTo({ top: 0, behavior: "smooth" });
       });
     </script>
     <h1 class="text-left mt-5"><b>Planning Technology Handbook + <br> Planning Through the Black Mirror Card Game</b></h1>
     <br><br>
-    <p><b>Last Updated:</b> July 2024</p>
+    <p><b>Last Updated:</b> March 2026</p>
+    <a href="https://github.com/APA-Technology-Division/planning-black-mirror-assets/blob/main/Planning%20with%20Black%20Mirror%20Instructions.pdf" target="_blank" style="
+      display: inline-block;
+      margin-bottom: 24px;
+      padding: 14px 28px;
+      background-color: #dbf436;
+      color: black;
+      font-family: 'Courier New', monospace;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      border: 3px solid black;
+      box-shadow: 4px 4px 0px black;
+      transition: box-shadow 0.1s ease, transform 0.1s ease;
+      letter-spacing: 0.03em;
+      width:100%;
+      text-align:center;
+    "
+    onmouseover="this.style.boxShadow='1px 1px 0px black'; this.style.transform='translate(3px,3px)';"
+    onmouseout="this.style.boxShadow='4px 4px 0px black'; this.style.transform='translate(0,0)';"
+    >&#9654; View Gameplay Instructions</a>
     <p class="text-left">Engage with the Technology Division and share your knowledge with others in the planning profession through this initiative made possible with the support of the 2024 American Planning Association's Product Development Grant. This grant will allow the Technology Division to develop a planning technology handbook and a refined version of the "Planning Through the Black Mirror" card game, which together aim to provide accessible, centralized guidance on technology strategy, applications, and ethics in planning practice, while engaging planners in real-world scenarios and best practices.</p>
     <div class="flourish-embed flourish-cards" data-src="visualisation/18863080"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
     <hr>
-    <h2> Project Milestones and Engagement Opportunities </h2>
-    <p>Click on each circle to view engagement opportunities for experienced professionals and students.  Black denotes Handbook action items, yellow denotes card game action items.</p>
-    <object id="svg-object" type="image/svg+xml" data="assets/grant-project-timeline.svg"></object>
-    <br>
-    <br><br><hr><br>
-    <h3 id="first-draft"><i class="fas fa-link"></i>   Handbook First Draft</h3>
-    <p>The Planning Technology handbook provides accessible, centralized guidance on technology strategy, applications, and ethics in planning practice across planning domain areas.  The handbook is supplemented by the Planning Through the Black Mirror card game, which encourages planners to engage with real-life scenarios and evaluate solutions based on best practices.
+    <h2>Resources</h2>
+    <p>Explore the project outputs and supporting materials:</p>
+    <div style="display:flex; flex-direction:column; gap:14px; margin-bottom:32px;">
+      <a href="https://www.planning.org/blog/9322137/planning-through-the-black-mirror/" target="_blank" style="
+        display:inline-flex; align-items:center; gap:12px;
+        padding: 14px 20px;
+        background-color: white;
+        color: black;
+        font-family: 'Courier New', monospace;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        border: 3px solid black;
+        box-shadow: 4px 4px 0px black;
+        transition: box-shadow 0.1s ease, transform 0.1s ease;
+        width: 100%;"
+        onmouseover="this.style.boxShadow='1px 1px 0px black'; this.style.transform='translate(3px,3px)';"
+        onmouseout="this.style.boxShadow='4px 4px 0px black'; this.style.transform='translate(0,0)';">
+        <i class="fas fa-pen-nib" style="font-size:22px;"></i> APA Blog Post
+      </a>
+      <a href="https://github.com/APA-Technology-Division/planning-black-mirror-assets" target="_blank" style="
+        display:inline-flex; align-items:center; gap:12px;
+        padding: 14px 20px;
+        background-color: white;
+        color: black;
+        font-family: 'Courier New', monospace;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        border: 3px solid black;
+        box-shadow: 4px 4px 0px black;
+        transition: box-shadow 0.1s ease, transform 0.1s ease;
+        width: 100%;"
+        onmouseover="this.style.boxShadow='1px 1px 0px black'; this.style.transform='translate(3px,3px)';"
+        onmouseout="this.style.boxShadow='4px 4px 0px black'; this.style.transform='translate(0,0)';">
+        <i class="fab fa-github" style="font-size:22px;"></i> Card Game Repository
+      </a>
+
+      <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSIEeOLnEVU0rFLLm-0vXV-7phxRm-q7gaAP05-lC531e-iIi1p-dsGSsuGwtKneqd2isG3UnxJPzBY/pubhtml" target="_blank" style="
+        display:inline-flex; align-items:center; gap:12px;
+        padding: 14px 20px;
+        background-color: white;
+        color: black;
+        font-family: 'Courier New', monospace;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        border: 3px solid black;
+        box-shadow: 4px 4px 0px black;
+        transition: box-shadow 0.1s ease, transform 0.1s ease;
+        width: 100%;"
+        onmouseover="this.style.boxShadow='1px 1px 0px black'; this.style.transform='translate(3px,3px)';"
+        onmouseout="this.style.boxShadow='4px 4px 0px black'; this.style.transform='translate(0,0)';">
+        <i class="fas fa-table" style="font-size:22px;"></i> Card Image Generation Prompts (Google Sheet)
+      </a>
+
+      <a href="http://tech.planning.org" target="_blank" style="
+        display:inline-flex; align-items:center; gap:12px;
+        padding: 14px 20px;
+        background-color: white;
+        color: black;
+        font-family: 'Courier New', monospace;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        border: 3px solid black;
+        box-shadow: 4px 4px 0px black;
+        transition: box-shadow 0.1s ease, transform 0.1s ease;
+        width: 100%;"
+        onmouseover="this.style.boxShadow='1px 1px 0px black'; this.style.transform='translate(3px,3px)';"
+        onmouseout="this.style.boxShadow='4px 4px 0px black'; this.style.transform='translate(0,0)';">
+        <i class="fas fa-globe" style="font-size:22px;"></i> APA Technology Division Website
+      </a>
+    </div>
+
+    <hr>
+    <!-- Timeline clickable thumbnail -->
+    <h2>Grant Project Timeline</h2>
+    <p>Click the timeline to view a full project summary.</p>
+    <div style="cursor:pointer; display:block; border: 3px solid black; box-shadow: 4px 4px 0px black; margin-bottom: 28px;" 
+         data-toggle="modal" data-target="#timelineModal"
+         title="Click to expand timeline">
+      <object type="image/svg+xml" data="assets/grant-project-timeline.svg" 
+              style="width:100%; display:block; pointer-events:none;"></object>
+    </div>
+
+    <!-- Timeline Modal -->
+    <div class="modal fade" id="timelineModal" tabindex="-1" role="dialog" aria-labelledby="timelineModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content" style="border: 3px solid black; border-radius: 0; font-family: 'Courier New', monospace;">
+          <div class="modal-header" style="border-bottom: 2px solid black;">
+            <h5 class="modal-title" id="timelineModalLabel" style="font-family: 'Courier New', monospace; font-weight:bold;">Grant Project Timeline &amp; Summary</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <object type="image/svg+xml" data="assets/grant-project-timeline.svg" style="width:100%; margin-bottom:28px; display:block;"></object>
+            <hr>
+            <h3 style="font-size:16px; font-weight:bold; margin-bottom:16px;">Project Summary</h3>
+            <ul style="line-height:2; padding-left: 20px;">
+              <li><b>Summer 2024</b> — Launched project website; recruited and selected two research assistants and subject matter expert reviewers.</li>
+              <li><b>Fall 2024</b> — RAs conducted research and developed case study scenarios; began playtesting with APA New York and at NPC 2024 in Minneapolis.</li>
+              <li><b>Early 2025</b> — Finalized 72-card deck, Black Swan rules, and card images; completed editor review; printed cards for NPC 2025.</li>
+              <li><b>March 2025</b> — Featured session at NPC 2025 in Denver (~60 attendees, 1.5 CM credits).</li>
+              <li><b>Spring–Summer 2025</b> — Submitted reimbursements; continued handbook development; virtual playtesting with university students.</li>
+              <li><b>Fall 2025</b> — Playtested at APA Washington conference; launched game rules on APA GitHub; explored chapter distribution.</li>
+              <li><b>Late 2025–Early 2026</b> — Commissioned print run; resolved printing defects; published blog post on APA website.</li>
+            </ul>
+          </div>
+          <div class="modal-footer" style="border-top: 2px solid black;">
+            <button type="button" class="btn" data-dismiss="modal" 
+              style="font-family:'Courier New',monospace; font-weight:bold; background-color:#dbf436; border:2px solid black; box-shadow:3px 3px 0 black;">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <br><br>
-    <b>Handbook Contents</b>
-    <br>
-      - Planning Through the Black Mirror Game Instructions
-      <br>- Core Concepts: Ethics and strategy for data, product development, procurement, methods for addressing cross-cutting issues
-      <br>- Applications and Solutions: Overview of applicability to planning domains (listed below), interrogation of examples of solutions, metrics for evaluation for solution efficacy, tools and resources supporting applications and solutions</p>
-      <ul>
-        <li>Climate</li>
-        <li>Economic Development</li>
-        <li>Employment</li>
-        <li>Energy and Natural Resources</li>
-        <li>Environment and Ecosystem Services</li>
-        <li>Food Systems</li>
-        <li>Hazard Mitigation and Disaster Recovery</li>
-        <li>Historic Preservation</li>
-        <li>Housing</li>
-        <li>Land Use and Land Cover</li>
-        <li>Transportation Urban Design</li>
-      </ul>
-      <div style="text-align:center; background-color:lightgray; padding:5%"><p><b>OPPORTUNITIES</b></p>
-      <ul>
-        <li><b><u>OPEN CALL FOR CASE STUDY EXAMPLES</u></b> - Seeking case study examples from planning practice (public and private sector; Ongoing); please email <a  style="background-color:#dbf436" href="mailto:apatechdivision@gmail.com"><b>apatechdivision@gmail.com</b></a> (CC: <a href="mailto:lplass@berkeley.edu">Lian Plass</a>) with a description of the technology application and any supplemental materials you can provide.<br><br>
-        </li>
-        <li><b><u>OPEN CALL FOR SUBJECT MATTER EXPERT REVIEWERS</u></b> - for above planning domain areas for external review of draft document sections. 
-          <br><br>
-          <b>Please fill out the <a style="background-color:#dbf436" href="https://forms.gle/yFgGE6JCQapBD3Cx7">interest form</a> by August 31st. </b>
-          <br><br>
-          <b>Note:</b> Preference is given to Technology Division members, please consider <b><a  style="background-color:#dbf436" href="http://tech.planning.org">joining</a></b> if you have not already.</li>
-        </ul></div>
-        <hr>      
-        <br>
-    <h3 id="review-revision"><i class="fas fa-link"></i>   Handbook Review and Revision</h3>
-    <p>
-      <b>** UPDATE (4/19/2025) **</b><br> The handbook is still under development and will be distributed to SMEs for review before Summer of 2025.  The call for case study examples and SME reviewers will remain open until this time.<br><br>
-      - - - <br>
-      This handbook will undergo review and revision throughout the Fall and Winter of 2024.  Members and other interested individuals who submitted an interest form will be given the opportunity to review and contribute to handbook contents during this phase.
-    </p>
 
-    <hr>      
-    <br>
-    <h3 id="design-copy"><i class="fas fa-link"></i>   Handbook Design and Copy</h3>
-    <p>The handbook will undergo copyediting and design in the Winter of 2024.  The handbook will be formatted for digital access.</p>
-    <hr>      
-    <br>
-    <h3 id="content-development"><i class="fas fa-link"></i>   Card Game Content Development</h3>
-    <p><b>** UPDATE (4/19/2025) **</b><br> The Division hosted an official gameplay session at the 2025 National Planning Conference in Denver, CO. 
-      <br>
-      <img style="width:100%; height:auto;" src="assets/images_blackmirror/blackmirror_2025session.jpg">
-      <br>
-      <br>
-      For more information about availability and publishing format, see section, "Publishing Handbook and Card Game" below.
-      <br>
-      - - - 
-      <br><br>
-      <p>The purpose of the Planning Through the Black Mirror card game is to engage planners in exploring and solving real-world planning challenges related to technology through an interactive, educational, and fun card game. The Black Mirror card game serves as a complement to the Technology Handbook.</p>
-    <div style="text-align:center; background-color:lightgray; padding:5%"><p><b>OPPORTUNITIES</b></p>
-      <p>
-        <b>** UPDATE (4/19/2025) **</b> The Content Development Assistant positions have been filled. Please see the Division Newsletter and future page updates for more details about their work!
-        <br>
-        <br>
-        <s><u><b>OPEN CALL FOR TWO CONTENT DEVELOPMENT ASSISTANTS</b></u> - Seeking two students to conduct research, collaborate with subject matter experts, and support content development for the "Planning Through the Black Mirror" card game, ensuring content accuracy and relevance.
-      <br><br>	
-      <b>Please review the <a style="background-color:#dbf436" href="https://drive.google.com/file/d/1ox9N_oswmFN4l5wDYBLGcxgWaRAfo5Dv/view?usp=drive_link">role description</a> and apply by August 31st.</b>
-      <br><br>
-      <b>Note:</b> Preference is given to Technology Division members, please consider <a  style="background-color:#dbf436" href="http://tech.planning.org"><b>joining</b></a> if you have not already.</div>
-      </p></s>
-    <hr>      
-    <br>
-    <h3 id="first-draft-card"><i class="fas fa-link"></i>   Card Game Copy First Draft Complete</h3>
-    <p>The first draft of the Planning Through the Black Mirror card game content will be completed by Fall/Winter 2024. This initial version will include detailed case studies and scenarios to be reviewed and refined in the subsequent stages.</p>
-    <hr>      
-    <br>
-    <h3 id="card-review-revision"><i class="fas fa-link"></i>   Card Game Review and Revision</h3>
-    <p>The card game will undergo review and revision during the Winter of 2024. Feedback from subject matter experts, planners, and Division members will be incorporated to enhance the accuracy, clarity, and educational value of the game.</p>
-    <hr>      
-    <br>
-    <h3 id="card-design-copy"><i class="fas fa-link"></i>   Card Game Design and Copy</h3>
-    <p>In the winter of 2024 going into early 2025, the card game will be copyedited and designed. This phase will focus on the visual and functional aspects of the game, ensuring it is engaging, accessible, and ready for production.</p>
-    <hr>      
-    <br>
-    <h3 id="publishing"><i class="fas fa-link"></i>   Publishing Handbook and Card Game</h3>
-    <p>The final versions of the Planning Technology Handbook and the Planning Through the Black Mirror card game will be published and made available to all members by the end of February 2025. These resources aim to provide valuable guidance and interactive learning tools for urban planners.
-      <br><br>
-      <b>The handbook will be accessible as a downloadable PDF and possibly a limited print edition, while the card game will be offered in digital format as a PDF document and virtual tabletop RPG templates to accommodate different preferences. The division is also considering a limited print edition of the card game as well.</b>
-      </p>
-    <hr>      
-    <br>
-
-
-    <script>
-      document.getElementById('svg-object').addEventListener('load', function() {
-          var svgDoc = this.contentDocument;
-          var elements = svgDoc.querySelectorAll('[data-target]');
-          elements.forEach(function(el) {
-              el.addEventListener('click', function() {
-                  var targetId = el.getAttribute('data-target');
-                  var targetElement = document.getElementById(targetId);
-                  if (targetElement) {
-                      targetElement.scrollIntoView({ behavior: 'smooth' });
-                  }
-              });
-          });
-      });
-  </script>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -213,12 +230,6 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://apa-technology-division.github.io/scripts/image-it-scripts.js"></script>
   <script src="https://apa-technology-division.github.io/scripts/gallery.js"></script>
-<!--   
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
-  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-  crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script> -->
 
     <!-- Custom JS -->
   <script src="scripts/ALAP.js" defer></script>
@@ -232,8 +243,8 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
 </body>
 <footer>
   <br>
-  <p style="text-align:center">pli | 2023</p>
+  <p style="text-align:center"><a href="https://github.com/lianplass">lianplass</a> | 2026</p>
   <br>
-  <a href="#" id="open_preferences_center">Update cookies preferences</a>
+  <p style="text-align:center"><a href="#" id="open_preferences_center">Update cookies preferences</a></p>
 </footer>
 </html>
